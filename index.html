@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Among Us - Game Night Roles</title>
+    <title>Ninja AmongUs: Active Roles</title>
     <style>
         body {
             background-color: #1a1a1a;
@@ -11,6 +11,19 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 20px;
+        }
+        .install-link {
+            position: absolute;
+            top: 25px;
+            right: 30px;
+            font-size: 1.1em;
+            color: #a0a0a0;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .install-link:hover {
+            color: #ffffff;
+            text-decoration: underline;
         }
         h1, h2 {
             text-align: center;
@@ -42,11 +55,11 @@
             background-color: #2c2c2c;
             border-radius: 15px;
             width: 220px;
-            padding: 20px;
+            padding: 15px 20px; /* Reduced vertical padding */
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 15px;
+            gap: 10px; /* Reduced gap */
             border: 2px solid #444;
             box-shadow: 0 4px 8px rgba(0,0,0,0.4);
             transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
@@ -57,26 +70,19 @@
             transform: scale(1.05);
             box-shadow: 0 8px 16px rgba(0,0,0,0.6);
         }
-        .role-icon {
+        .role-icon { 
             height: 80px;
-        }
-        .role-name {
-            font-size: 0 
-            font-weight: bold;
         }
         .role-description {
             font-size: 0.9em;
             text-align: center;
-            min-height: 75px;
+            min-height: 60px; /* Reduced min-height */
             color: #ccc;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .crewmate .role-name { color: #6495ED; }
-        .impostor .role-name { color: #DC143C; }
-        .neutral .role-name { color: #9932CC; }
         .crewmate:hover { border-color: #6495ED; }
         .impostor:hover { border-color: #DC143C; }
         .neutral:hover { border-color: #9932CC; }
@@ -84,14 +90,15 @@
 </head>
 <body>
 
-    <h1>Town of Us: Mira Roles</h1>
+    <a href="https://au-avengers.github.io/docs.toum.gg/docs/install/windows/Steam" target="_blank" class="install-link">Installing the Mod</a>
+
+    <h1>Ninja AmongUs: Active Roles</h1>
 
     <!-- Crewmate Roles -->
     <h2 class="crewmate-heading">Crewmates</h2>
     <div class="roles-container">
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/crewmate/support/Engineer" target="_blank" class="role-card crewmate">
-            <img class="role-icon" src="images/Engineer.png" alt="Engineer Icon">
-            <span class="role-name">engineer</span>
+            <img class="role-icon" src="images/engineer.png" alt="Engineer Icon">
             <p class="role-description">Can use the vents to travel around the map.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/crewmate/investigative/Lookout" target="_blank" class="role-card crewmate">
@@ -100,37 +107,30 @@
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/crewmate/power/Mayor" target="_blank" class="role-card crewmate">
             <img class="role-icon" src="images/mayor.png" alt="Mayor Icon">
-            <span class="role-name">Mayor</span>
             <p class="role-description">Can store votes and release them all at once in a meeting.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/crewmate/protective/Medic" target="_blank" class="role-card crewmate">
             <img class="role-icon" src="images/medic.png" alt="Medic Icon">
-            <span class="role-name">Medic</span>
             <p class="role-description">Can grant a player a one-time shield that prevents a kill.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/crewmate/investigative/Medium" target="_blank" class="role-card crewmate">
             <img class="role-icon" src="images/medium.png" alt="Medium Icon">
-            <span class="role-name">Medium</span>
             <p class="role-description">Can hear from dead players during meetings.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/crewmate/investigative/Mystic" target="_blank" class="role-card crewmate">
             <img class="role-icon" src="images/mystic.png" alt="Mystic Icon">
-            <span class="role-name">Mystic</span>
             <p class="role-description">Can check if a dead player's alignment was Good or Evil.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/crewmate/investigative/Seer" target="_blank" class="role-card crewmate">
             <img class="role-icon" src="images/seer.png" alt="Seer Icon">
-            <span class="role-name">Seer</span>
             <p class="role-description">Can investigate a player to see their exact role.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/crewmate/information/Snitch" target="_blank" class="role-card crewmate">
             <img class="role-icon" src="images/snitch.png" alt="Snitch Icon">
-            <span class="role-name">Snitch</span>
             <p class="role-description">Learns Impostors' identities after finishing their tasks.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/crewmate/protective/Trapper" target="_blank" class="role-card crewmate">
             <img class="role-icon" src="images/trapper.png" alt="Trapper Icon">
-            <span class="role-name">Trapper</span>
             <p class="role-description">Can place a trap that reveals who triggered it.</p>
         </a>
     </div>
@@ -140,37 +140,30 @@
     <div class="roles-container">
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/impostor/support/Blackmailer" target="_blank" class="role-card impostor">
             <img class="role-icon" src="images/blackmailer.png" alt="Blackmailer Icon">
-            <span class="role-name">Blackmailer</span>
             <p class="role-description">Can prevent a player from speaking during meetings.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/impostor/killing/Bomber" target="_blank" class="role-card impostor">
             <img class="role-icon" src="images/bomber.png" alt="Bomber Icon">
-            <span class="role-name">Bomber</span>
             <p class="role-description">Can plant a remote bomb on another player to kill them.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/impostor/concealing/Eclipsal" target="_blank" class="role-card impostor">
             <img class="role-icon" src="images/eclipsal.png" alt="Eclipse Icon">
-            <span class="role-name">Eclipse</span>
             <p class="role-description">Can cause a total darkness where only Impostors can see.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/impostor/concealing/Escapist" target="_blank" class="role-card impostor">
             <img class="role-icon" src="images/escapist.png" alt="Escapist Icon">
-            <span class="role-name">Escapist</span>
             <p class="role-description">Can guess a player's role, and if correct, remove them from the game.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/impostor/support/Janitor" target="_blank" class="role-card impostor">
             <img class="role-icon" src="images/janitor.png" alt="Janitor Icon">
-            <span class="role-name">Janitor</span>
             <p class="role-description">Can clean a body, making it unreportable.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/impostor/support/Miner" target="_blank" class="role-card impostor">
             <img class="role-icon" src="images/miner.png" alt="Miner Icon">
-            <span class="role-name">Miner</span>
             <p class="role-description">Can place temporary vents anywhere on the map.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/impostor/support/Undertaker" target="_blank" class="role-card impostor">
             <img class="role-icon" src="images/undertaker.png" alt="Undertaker Icon">
-            <span class="role-name">Undertaker</span>
             <p class="role-description">Can drag a body, which will auto-report after some time.</p>
         </a>
     </div>
@@ -180,22 +173,18 @@
     <div class="roles-container">
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/neutral/benign/Amnesiac" target="_blank" class="role-card neutral">
             <img class="role-icon" src="images/amnesiac.png" alt="Amnesiac Icon">
-            <span class="role-name">Amnesiac</span>
             <p class="role-description">Can remember the role of a dead player and take on their goal.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/neutral/evil/Executioner" target="_blank" class="role-card neutral">
             <img class="role-icon" src="images/executioner.png" alt="Executioner Icon">
-            <span class="role-name">Executioner</span>
             <p class="role-description">Wins if their specific target is voted out.</p>
         </a>
         <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/neutral/benign/Fairy" target="_blank" class="role-card neutral">
-            <img class="role-icon" src="images/guardianangel.png" alt="Fairy Icon">
-            <span class="role-name">Fairy</span>
+            <img class="role-icon" src="images/fairy.png" alt="Fairy Icon">
             <p class="role-description">Wins if their linked target survives to the end of the game.</p>
         </a>
          <a href="https://au-avengers.github.io/docs.toum.gg/docs/roles/neutral/evil/Jester" target="_blank" class="role-card neutral">
             <img class="role-icon" src="images/jester.png" alt="Jester Icon">
-            <span class="role-name">Jester</span>
             <p class="role-description">Wins if they get voted out by the other players.</p>
         </a>
     </div>
