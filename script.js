@@ -624,5 +624,23 @@ function createRoleCard(role, roleType) {
     return card;
 }
 
+// Popup toggle function
+function toggleInstallPopup() {
+    const popup = document.getElementById('install-popup');
+    if (popup.style.display === 'block') {
+        popup.style.display = 'none';
+    } else {
+        popup.style.display = 'block';
+    }
+}
+
+// Close popup when clicking outside of it
+window.onclick = function(event) {
+    const popup = document.getElementById('install-popup');
+    if (event.target === popup) {
+        popup.style.display = 'none';
+    }
+}
+
 // Load roles when the page is ready
 document.addEventListener('DOMContentLoaded', loadRoles);

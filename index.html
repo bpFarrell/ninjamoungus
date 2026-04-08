@@ -8,7 +8,21 @@
 </head>
 <body>
 
-    <a href="https://au-avengers.github.io/docs.toum.gg/docs/install/windows/Steam" target="_blank" class="install-link">Installing the Mod</a>
+    <div class="install-link" onclick="toggleInstallPopup()">Installing the Mod</div>
+    
+    <!-- Install popup -->
+    <div id="install-popup" class="install-popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="toggleInstallPopup()">&times;</span>
+            <h3>Installing the Mod</h3>
+            <ul>
+                <li>• Download this file (<a href="https://github.com/AU-Avengers/TOU-Mira/releases/download/1.5.9/TouMira-v1.5.9-x86-steam-itch.zip" target="_blank">TouMira-v1.5.9-x86-steam-itch.zip</a>)</li>
+                <li>• In Steam right click on Among Us and goto Manage / Browse Local Files. </li>
+                <li>• Extract the contents of the zip folder into the Among Us Directory</li>
+                <li>• Run the Among Us through Steam (First time loading will take a min.)</li>
+            </ul>
+        </div>
+    </div>
 
     <h1>Ninja AmongUs: Active Roles</h1>
 
