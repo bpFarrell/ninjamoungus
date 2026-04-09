@@ -576,8 +576,8 @@ function loadRoles() {
     const filteredNeutrals = filterRolesByWhitelist(rolesData.neutrals);
     
     renderRoleSection('crewmates', filteredCrewmates, 'Crewmates', 'crewmate-heading');
-    renderRoleSection('impostors', filteredImpostors, 'Impostors', 'impostor-heading');
-    renderRoleSection('neutrals', filteredNeutrals, 'Neutrals', 'neutral-heading');
+    renderRoleSection('impostors', filteredImpostors, 'Impostors (Only 2)', 'impostor-heading');
+    renderRoleSection('neutrals', filteredNeutrals, 'Neutrals (Only 1)', 'neutral-heading');
 }
 
 function renderRoleSection(sectionId, roles, title, headingClass) {
