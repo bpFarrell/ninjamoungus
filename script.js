@@ -471,9 +471,10 @@ const rolesData = {
 // Simply add // in front of any line to hide that role
 const enabledRoles = [
     // === CREWMATE ROLES ===
-    // Afterlife
+    // === Afterlife
     //"Haunter",
-    // Investigative
+ 
+    // === Investigative
     //"Aurial",
     //"Forensic", 
     //"Investigator",
@@ -484,27 +485,31 @@ const enabledRoles = [
     "Snitch",
     //"Sonar",
     //"Spy",
-    "Trapper",
-    // Protective
+    //"Trapper",
+
+    // === Protective
     //"Altruist",
     //"Cleric",
     "Medic",
     //"Mirrorcaster",
     //"Oracle",
-    //"Warden",
-    // Support
+    "Warden",
+
+    // === Support
     "Engineer",
     //"Imitator",
-    //"Plumber",
+    "Plumber",
     //"Sentry",
     //"Transporter",
-    // Killing
+  
+    // === Killing
     //"Deputy",
     //"Hunter",
     "Sheriff",
     //"Veteran",
     //"Vigilante",
-    // Power
+
+    // ===  Power
     //"Jailor",
     "Mayor",
     //"Monarch",
@@ -514,14 +519,15 @@ const enabledRoles = [
     //"Time Lord",
     
     // === IMPOSTOR ROLES ===
-    // Concealing
+    // === Concealing
     "Eclipsal",
     "Escapist",
     //"Grenadier",
     //"Morphling",
     //"Swooper",
     //"Venerer",
-    // Support
+
+    // === Support
     //"Blackmailer",
     //"Hypnotist",
     "Janitor",
@@ -533,7 +539,8 @@ const enabledRoles = [
     //"Parasite",
     //"Scavenger",
     //"Warlock",
-    // Power
+
+    // === Power
     //"Ambassador",
     //"Herbalist",
     //"Puppeteer",
@@ -541,16 +548,18 @@ const enabledRoles = [
     //"Traitor",
     
     // === NEUTRAL ROLES ===
-    // Benign
+    // === Benign
     "Amnesiac",
     "Fairy",
     //"Mercenary",
     //"Survivor",
-    // Evil
+ 
+    // === Evil
     //"Doomsayer",
     "Executioner",
     "Jester",
-    // Killing
+
+    // === Killing
     //"Arsonist",
     //"Glitch",
     //"Juggernaut",
@@ -559,9 +568,11 @@ const enabledRoles = [
     //"Soul Collector",
     //"Vampire",
     //"Werewolf",
-    // Afterlife
+
+    // === Afterlife
     //"Spectre",
-    // Outlier
+ 
+    // === Outlier
     //"Chef",
     //"Inquisitor"
 ];
