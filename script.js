@@ -501,7 +501,7 @@ const enabledRoles = [
     // Killing
     //"Deputy",
     //"Hunter",
-    //"Sheriff",
+    "Sheriff",
     //"Veteran",
     //"Vigilante",
     // Power
