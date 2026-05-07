@@ -535,7 +535,7 @@ const enabledRoles = [
     //"Undertaker",
     // Killing
     //"Ambusher",
-    //"Bomber",
+    "Bomber",
     //"Parasite",
     //"Scavenger",
     //"Warlock",
@@ -588,7 +588,7 @@ function loadRoles() {
     
     renderRoleSection('crewmates', filteredCrewmates, 'Crewmates', 'crewmate-heading');
     renderRoleSection('impostors', filteredImpostors, 'Impostors (Only 2)', 'impostor-heading');
-    renderRoleSection('neutrals', filteredNeutrals, 'Neutrals (Only 1)', 'neutral-heading');
+    renderRoleSection('neutrals', filteredNeutrals, 'Neutrals (Maybe 2)', 'neutral-heading');
 }
 
 function renderRoleSection(sectionId, roles, title, headingClass) {
