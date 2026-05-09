@@ -566,7 +566,7 @@ const enabledRoles = [
     //"Pestilence",
     //"Plaguebearer",
     //"Soul Collector",
-    //"Vampire",
+    "Vampire",
     //"Werewolf",
 
     // === Afterlife
