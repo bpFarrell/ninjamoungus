@@ -479,7 +479,7 @@ const enabledRoles = [
     //"Forensic", 
     //"Investigator",
     //"Lookout",
-    //"Medium",
+    "Medium",
     "Mystic",
     "Seer",
     "Snitch",
@@ -528,7 +528,7 @@ const enabledRoles = [
     //"Venerer",
 
     // === Support
-    //"Blackmailer",
+    "Blackmailer",
     //"Hypnotist",
     "Janitor",
     "Miner",
@@ -545,7 +545,7 @@ const enabledRoles = [
     //"Herbalist",
     //"Puppeteer",
     //"Spellslinger",
-    //"Traitor",
+    "Traitor",
     
     // === NEUTRAL ROLES ===
     // === Benign
