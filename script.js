@@ -542,7 +542,7 @@ const enabledRoles = [
 
     // === Power
     //"Ambassador",
-    "Herbalist",
+    //"Herbalist",
     //"Puppeteer",
     //"Spellslinger",
     "Traitor",
@@ -566,7 +566,7 @@ const enabledRoles = [
     //"Pestilence",
     //"Plaguebearer",
     //"Soul Collector",
-    "Vampire",
+    //"Vampire",
     //"Werewolf",
 
     // === Afterlife
