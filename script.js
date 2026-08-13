@@ -500,7 +500,7 @@ const enabledRoles = [
     //"Imitator",
     "Plumber",
     //"Sentry",
-    //"Transporter",
+    "Transporter",
   
     // === Killing
     //"Deputy",
